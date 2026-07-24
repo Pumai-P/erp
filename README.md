@@ -1,5 +1,8 @@
-# ERP Functional Portfolio V7.1
+# ERP Functional Portfolio V7.3
 
-All website files and image assets are stored in the repository root to simplify GitHub Pages deployment.
+Adds an Articles & Insights section and Medium profile integration.
+
+Medium profile:
+https://medium.com/@dew.pumai
 
 Upload every file in this package to the repository root.
