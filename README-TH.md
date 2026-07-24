@@ -1,29 +1,33 @@
-# ERP Functional Portfolio V7.1
+# ERP Functional Portfolio V7.2
 
-เวอร์ชันนี้แก้ปัญหารูปไม่แสดง โดยนำรูปทั้งหมดมาไว้ที่ Root ของ Repository
-จึงไม่ต้องสร้างหรืออัปโหลดโฟลเดอร์ `assets`
+เวอร์ชันนี้แก้รูป Project 1 และ Project 3 ตามไฟล์ Diagram ล่าสุด
 
-ปรับเพิ่มเติม:
-- ลบข้อความ `User-created process diagram`
-- เปลี่ยนหัวกรอบเป็น `Manufacturing Process Design · Before & After`
-- คลิกรูป Project 2 และ Project 3 เพื่อขยายเต็มหน้าจอได้
-- คง Layout และเนื้อหาของ V7 ไว้
+## Project 1
+เพิ่มภาพ 2 ส่วน:
+- `project1-before.png` — กระบวนการเดิม
+- `project1-after.png` — กระบวนการใหม่
+
+ภาพทั้งสองคลิกเพื่อขยายเต็มหน้าจอได้
+
+## Project 3
+เปลี่ยน Technical Data Model เป็นไฟล์ล่าสุด:
+- `project3-technical-model.png`
 
 ## วิธีอัปเดตบน GitHub
+1. ลบไฟล์เว็บเวอร์ชันเดิม หรืออัปโหลดทับไฟล์ชื่อเดิม
+2. อัปโหลดไฟล์ทั้งหมดใน ZIP นี้ไว้ที่ Root ของ Repository
+3. Commit changes
+4. รอ 1–2 นาที แล้วกด Ctrl + F5
 
-1. ลบไฟล์เว็บเวอร์ชันเดิม
-2. แตก ZIP นี้
-3. อัปโหลดไฟล์ทั้งหมดพร้อมกันไว้ที่หน้าแรกของ Repository
-4. Commit changes
-5. รอ 1–2 นาที แล้วกด Ctrl + F5
-
-ตรวจให้แน่ใจว่ารายชื่อไฟล์มี:
+ตรวจสอบว่ามีไฟล์:
 - index.html
 - styles.css
 - raw-material-valuation.html
 - oem-manufacturing.html
 - cost-data-model.html
-- profile.jpg
-- resume.pdf
+- project1-before.png
+- project1-after.png
 - project2-before-after.png
 - project3-technical-model.png
+- profile.jpg
+- resume.pdf
