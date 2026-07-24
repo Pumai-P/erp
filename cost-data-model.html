@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Business Cost Data Model & Reporting | Pumai Pukjit</title><link rel="stylesheet" href="styles.css"></head><body><header class="topbar">
+<a class="brand" href="index.html"><span class="brand-mark">PP</span><span><strong>Pumai Pukjit</strong><small>ERP Functional Portfolio</small></span></a>
+<nav class="topnav"><a href="index.html#cases">Case Studies</a><a href="index.html#sap">SAP Journey</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav>
+</header>
+<div class="layout"><aside class="sidebar">
+<p class="side-label">CASE STUDIES</p><a class="" href="raw-material-valuation.html">Raw Material Valuation</a><a class="" href="oem-manufacturing.html">OEM Manufacturing</a><a class="active" href="cost-data-model.html">Cost Data Model</a>
+<p class="side-label side-gap">NAVIGATION</p><a href="index.html">← Portfolio Home</a>
+</aside><main>
+<section class="case-hero shell"><a class="back" href="index.html#cases">← Back to case studies</a><p class="eyebrow">BUSINESS DATA MODELING · PRODUCT COSTING · ANALYTICS</p><h1>Business Cost Data Model & Reporting</h1><p class="case-lead">Designed a business cost data model that transformed ERP transaction data into business-ready cost information, eliminating manual EY costing preparation and enabling direct planned-versus-actual cost analysis.</p><div class="meta-grid"><div class="meta"><b>Business area</b><span>Cost accounting</span></div><div class="meta"><b>My role</b><span>Data model & report design</span></div><div class="meta"><b>Source</b><span>ERP transactions and master data</span></div><div class="meta"><b>Output</b><span>Excel cost analysis</span></div></div></section>
+<section class="section shell"><div class="case-body">
+<section><p class="section-label">01 · Business Challenge</p><h2 class="section-title">Detailed ERP transactions were not organized for business cost analysis.</h2><p class="section-intro">The existing process relied on monthly data exports and manual Excel preparation. One EY product could represent many ERP parts, while transaction-level records needed interpretation before users could compare cost and selling price.</p><div class="problem-grid"><div class="info-card danger"><b>Repetitive monthly preparation</b><p>Users rebuilt the EY cost analysis from exported ERP data.</p></div><div class="info-card danger"><b>Technical transaction detail</b><p>Raw transaction types were difficult to analyze directly.</p></div><div class="info-card danger"><b>Multiple parts per EY product</b><p>ERP product detail did not match the business reporting structure.</p></div><div class="info-card danger"><b>Manual cost comparison</b><p>Planned, actual, and selling-price comparisons required extensive manual work.</p></div></div></section>
+<section><p class="section-label">02 · My Role</p><h2 class="section-title">Designing the semantic layer between ERP data and business information.</h2><div class="role-grid"><div class="info-card role-card"><span class="role-icon">01</span><div><b>Data Relationship Analysis</b><p>Analyzed ERP transaction and master-data relationships.</p></div></div><div class="info-card role-card"><span class="role-icon">02</span><div><b>Classification Rules</b><p>Designed transaction and material classification logic.</p></div></div><div class="info-card role-card"><span class="role-icon">03</span><div><b>Business Mapping</b><p>Mapped ERP parts into EY business product structures.</p></div></div><div class="info-card role-card"><span class="role-icon">04</span><div><b>Cost Data Model</b><p>Defined the business cost components and aggregation model.</p></div></div><div class="info-card role-card"><span class="role-icon">05</span><div><b>Report Design</b><p>Designed Excel-ready outputs for analysis.</p></div></div><div class="info-card role-card"><span class="role-icon">06</span><div><b>User Validation</b><p>Worked with users to validate costing structures and results.</p></div></div></div></section>
+<section><p class="section-label">03 · Business Data Flow</p><h2 class="section-title">Transform ERP records through classification, mapping, and aggregation layers.</h2><div class="data-pipeline">
+<div class="data-stage"><span class="stage-no">LAYER 01</span><h3>ERP Data Sources</h3><ul><li>PartTran</li><li>Part</li><li>Job</li><li>Product Class</li><li>Product Group</li><li>Price List</li></ul></div>
+<div class="data-stage"><span class="stage-no">LAYER 02</span><h3>Transaction Classification</h3><ul><li>Material Issue</li><li>Material Receipt</li><li>Labor</li><li>Manufacturing Overhead</li><li>Cost Adjustments</li></ul></div>
+<div class="data-stage"><span class="stage-no">LAYER 03</span><h3>Material & Product Mapping</h3><ul><li>Raw Material</li><li>Ingredients</li><li>Packaging</li><li>Other Materials</li><li>ERP Parts → EY Product</li></ul></div>
+<div class="data-stage"><span class="stage-no">LAYER 04</span><h3>Business Cost Model</h3><ul><li>Raw Material</li><li>Labor</li><li>Manufacturing OH</li><li>Packaging</li><li>Total Product Cost</li></ul></div>
+<div class="data-stage"><span class="stage-no">LAYER 05</span><h3>Cost Analysis</h3><ul><li>Planned vs Actual</li><li>Cost by EY Product</li><li>Cost Components</li><li>Selling Price</li><li>Margin Analysis</li></ul></div>
+</div></section>
+<section><p class="section-label">04 · Technical Data Model</p><h2 class="section-title">ERP data relationships supporting the business transformation layer.</h2><div class="technical-view"><div class="technical-copy"><h3>Technical source view</h3><p>The technical model identifies the main transaction and master-data relationships used to enrich PartTran records before applying business classification and mapping rules.</p><div class="layer-strip"><div class="source"><b>ERP Tables</b><span>Technical source records</span></div><div class="rules"><b>Business Rules</b><span>Classification and mapping layer</span></div><div class="output"><b>Cost Information</b><span>Business-ready analysis</span></div></div></div><div class="diagram-frame">
+<div class="diagram-toolbar"><strong>Technical Data Model</strong><span>Click the diagram to enlarge</span></div>
+<button class="diagram-button" type="button" data-lightbox="project3-technical-model.png" aria-label="Open technical data model">
+<img src="project3-technical-model.png" alt="ERP technical data model">
+</button>
+<div class="diagram-caption">Simplified technical model showing the data relationships used for the cost-reporting solution.</div>
+</div></div></section>
+<section><p class="section-label">05 · Business Impact</p><h2 class="section-title">A repeatable cost-information model instead of manual report preparation.</h2><div class="impact-grid"><div class="info-card success">Eliminated separate manual EY costing preparation.</div><div class="info-card success">Reduced repetitive monthly Excel processing.</div><div class="info-card success">Standardized transaction classification and cost grouping.</div><div class="info-card success">Enabled direct planned-versus-actual and selling-price comparison.</div></div></section>
+<section><p class="section-label">06 · SAP Relevance</p><h2 class="section-title">Transferable costing, mapping, and analytics concepts.</h2><div class="sap-grid"><div class="info-card">Product Costing (CO-PC)</div><div class="info-card">Cost Component Structure</div><div class="info-card">Cost Object Analysis</div><div class="info-card">Master Data Mapping</div><div class="info-card">Business Data Modeling</div><div class="info-card">Actual Cost Analysis</div></div><p class="small-note">Conceptual links only; this solution was designed using Epicor transaction data.</p></section>
+</div></section><footer class="shell"><span>© 2026 Pumai Pukjit</span><span>ERP Functional Portfolio</span></footer></main></div>
+<div class="lightbox" id="imageLightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+  <img class="lightbox-image" src="" alt="">
+</div>
+<script>
+document.querySelectorAll("[data-lightbox]").forEach(function(button){
+  button.addEventListener("click", function(){
+    var box = document.getElementById("imageLightbox");
+    var image = box.querySelector(".lightbox-image");
+    image.src = button.getAttribute("data-lightbox");
+    image.alt = button.querySelector("img").alt;
+    box.classList.add("open");
+    box.setAttribute("aria-hidden","false");
+  });
+});
+document.querySelector(".lightbox-close").addEventListener("click", closeLightbox);
+document.getElementById("imageLightbox").addEventListener("click", function(event){
+  if(event.target === this){ closeLightbox(); }
+});
+document.addEventListener("keydown", function(event){
+  if(event.key === "Escape"){ closeLightbox(); }
+});
+function closeLightbox(){
+  var box = document.getElementById("imageLightbox");
+  box.classList.remove("open");
+  box.setAttribute("aria-hidden","true");
+}
+</script>
+</body></html>

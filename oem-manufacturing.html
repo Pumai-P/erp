@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OEM Manufacturing Process Optimization | Pumai Pukjit</title><link rel="stylesheet" href="styles.css"></head><body><header class="topbar">
+<a class="brand" href="index.html"><span class="brand-mark">PP</span><span><strong>Pumai Pukjit</strong><small>ERP Functional Portfolio</small></span></a>
+<nav class="topnav"><a href="index.html#cases">Case Studies</a><a href="index.html#sap">SAP Journey</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav>
+</header>
+<div class="layout"><aside class="sidebar">
+<p class="side-label">CASE STUDIES</p><a class="" href="raw-material-valuation.html">Raw Material Valuation</a><a class="active" href="oem-manufacturing.html">OEM Manufacturing</a><a class="" href="cost-data-model.html">Cost Data Model</a>
+<p class="side-label side-gap">NAVIGATION</p><a href="index.html">← Portfolio Home</a>
+</aside><main>
+<section class="case-hero shell"><a class="back" href="index.html#cases">← Back to case studies</a><p class="eyebrow">PRODUCTION · CO-PRODUCTS · PRODUCT COSTING</p><h1>OEM Manufacturing Process Optimization</h1><p class="case-lead">Separated raw material costs before production by redesigning the manufacturing process with co-products, enabling more accurate inventory valuation and product costing.</p><div class="meta-grid"><div class="meta"><b>Business area</b><span>Production & costing</span></div><div class="meta"><b>My role</b><span>Process and costing design</span></div><div class="meta"><b>Core concept</b><span>Co-products</span></div><div class="meta"><b>Outcome</b><span>Detailed cost visibility</span></div></div></section>
+<section class="section shell"><div class="case-body">
+<section><p class="section-label">01 · Business Challenge</p><h2 class="section-title">The same raw material cost was used across different product grades.</h2><p class="section-intro">Different finished-goods grades consumed materials of different quality, but the original process allocated the same average raw material cost across production jobs.</p><div class="diagram-frame before">
+<div class="diagram-toolbar"><strong>Manufacturing Process Design · Before & After</strong><span>Click the diagram to enlarge</span></div>
+<button class="diagram-button" type="button" data-lightbox="project2-before-after.png" aria-label="Open manufacturing process diagram">
+<img src="project2-before-after.png" alt="Before and after OEM manufacturing and costing process">
+</button>
+<div class="diagram-caption">The diagram compares the original manufacturing and costing flow with the redesigned co-product process.</div>
+</div></section>
+<section><p class="section-label">02 · Business Effects</p><h2 class="section-title">Broad cost allocation reduced product-cost accuracy.</h2><div class="problem-grid"><div class="info-card danger"><b>Premium products undervalued</b><p>Higher-quality material consumption was not fully reflected in product cost.</p></div><div class="info-card danger"><b>Standard products overvalued</b><p>Lower-quality material inherited part of the premium material cost.</p></div><div class="info-card danger"><b>Inventory valuation mismatch</b><p>Material groups did not carry independent, business-relevant values.</p></div><div class="info-card danger"><b>Profitability analysis weakened</b><p>Selling price and unit-cost comparisons were less representative.</p></div></div></section>
+<section><p class="section-label">03 · My Role</p><h2 class="section-title">Redesigning the manufacturing and costing structure.</h2><div class="role-grid"><div class="info-card role-card"><span class="role-icon">01</span><div><b>Process Analysis</b><p>Reviewed the existing manufacturing and costing flow.</p></div></div><div class="info-card role-card"><span class="role-icon">02</span><div><b>Gap Identification</b><p>Identified limitations in the standard costing model.</p></div></div><div class="info-card role-card"><span class="role-icon">03</span><div><b>Functional Design</b><p>Designed a new production flow using co-products.</p></div></div><div class="info-card role-card"><span class="role-icon">04</span><div><b>Cost Allocation Logic</b><p>Defined material preparation and allocation rules.</p></div></div><div class="info-card role-card"><span class="role-icon">05</span><div><b>BOM Configuration</b><p>Embedded the solution into BOM formulas for repeatable job creation.</p></div></div><div class="info-card role-card"><span class="role-icon">06</span><div><b>User Adoption</b><p>Reduced the need for users to configure the solution job by job.</p></div></div></div></section>
+<section><p class="section-label">04 · Solution Design</p><h2 class="section-title">Separate material groups before the main production process.</h2><p class="section-intro">An intermediate material-preparation job produced dedicated material groups as co-products. Each group received its own cost allocation before being issued to the corresponding production job.</p><div class="layer-strip"><div class="source"><b>Prepare</b><span>Issue the original raw material into a preparation job.</span></div><div class="rules"><b>Separate & Allocate</b><span>Create co-products and distribute quantity and cost by business rules.</span></div><div class="output"><b>Consume Correctly</b><span>Production jobs consume the appropriate material group and cost.</span></div></div></section>
+<section><p class="section-label">05 · Business Impact</p><h2 class="section-title">More accurate valuation and flexible OEM costing.</h2><div class="impact-grid"><div class="info-card success">Improved inventory valuation accuracy.</div><div class="info-card success">Enabled product costing by material quality.</div><div class="info-card success">Increased flexibility for OEM manufacturing requirements.</div><div class="info-card success">Reduced reliance on broad average-cost allocation.</div></div></section>
+<section><p class="section-label">06 · SAP Relevance</p><h2 class="section-title">Transferable manufacturing and costing concepts.</h2><div class="sap-grid"><div class="info-card">Production Planning (PP)</div><div class="info-card">Co-products</div><div class="info-card">Product Costing</div><div class="info-card">Inventory Valuation</div><div class="info-card">BOM Design</div><div class="info-card">Manufacturing Process Design</div></div><p class="small-note">Conceptual links only; the project was implemented in Epicor.</p></section>
+</div></section><footer class="shell"><span>© 2026 Pumai Pukjit</span><span>ERP Functional Portfolio</span></footer></main></div>
+<div class="lightbox" id="imageLightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+  <img class="lightbox-image" src="" alt="">
+</div>
+<script>
+document.querySelectorAll("[data-lightbox]").forEach(function(button){
+  button.addEventListener("click", function(){
+    var box = document.getElementById("imageLightbox");
+    var image = box.querySelector(".lightbox-image");
+    image.src = button.getAttribute("data-lightbox");
+    image.alt = button.querySelector("img").alt;
+    box.classList.add("open");
+    box.setAttribute("aria-hidden","false");
+  });
+});
+document.querySelector(".lightbox-close").addEventListener("click", closeLightbox);
+document.getElementById("imageLightbox").addEventListener("click", function(event){
+  if(event.target === this){ closeLightbox(); }
+});
+document.addEventListener("keydown", function(event){
+  if(event.key === "Escape"){ closeLightbox(); }
+});
+function closeLightbox(){
+  var box = document.getElementById("imageLightbox");
+  box.classList.remove("open");
+  box.setAttribute("aria-hidden","true");
+}
+</script>
+</body></html>
